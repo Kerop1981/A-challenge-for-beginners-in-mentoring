@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header">
+        {{user.name}}
+    </div>
+    <div class="card-body">
+        <p>ID:{{user.id}}</p>
+        <p>Email:{{user.email}}</p>
+        <p>Ученик Ильнура</p>
+        <p>Самый перспективный ученик,ВОИН!</p>
+        <p>Another Field: {{ user.id}}</p>
+        <button (click)="deleteUser()">Удалить</button>
+    </div>
+</div>

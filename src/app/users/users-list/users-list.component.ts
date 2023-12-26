@@ -3,11 +3,13 @@ import { UsersApiService } from '../../users-api.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { UserModalComponent } from '../../user-modal/user-modal.component'
 import{ UserCardComponent} from '../../user-card/user-card.component'
+import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-users-list',
   templateUrl: './users-list.component.html',
   styleUrls: ['./users-list.component.css'],
-
+  standalone:true,imports:[UserCardComponent,CommonModule]
 })
 
 

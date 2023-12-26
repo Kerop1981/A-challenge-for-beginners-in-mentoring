@@ -9,7 +9,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-users-list',
   templateUrl: './users-list.component.html',
   styleUrls: ['./users-list.component.css'],
-  standalone:true,imports:[UserCardComponent,CommonModule]
+  standalone:true,
+  imports:[UserCardComponent,CommonModule]
 })
 
 

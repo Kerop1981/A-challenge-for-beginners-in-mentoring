@@ -1,5 +1,5 @@
 <div *ngFor="let user of userList">
-  <app-user-card></app-user-card>
+  <app-user-card [user]="user" (deleteUserEvent)="deleteUser(user)" class="user-card"></app-user-card>
   <button (click)="editUser(user)" class="btn btn-primary">Редактировать</button>
 </div>
 <button class="btn btn-primary" (click)="openUserModal()">Добавить пользователя</button>
